@@ -1,0 +1,191 @@
+{
+  "inbox": [
+    {
+      "id": 2,
+      "type": "newBaby",
+      "date": "2017-01-02"
+    },
+    {
+      "id": 3,
+      "type": "birthday",
+      "date": "2017-01-15"
+    },
+    {
+      "id": 4,
+      "type": "birthday",
+      "date": "2017-02-23"
+    },
+    {
+      "id": 6,
+      "type": "birthday",
+      "date": "2017-08-07"
+    },
+    {
+      "id": 7,
+      "type": "birthday",
+      "date": "2017-09-07"
+    },
+    {
+      "id": 8,
+      "type": "newBaby",
+      "date": "2017-10-07"
+    },
+    {
+      "id": 9,
+      "type": "birthday",
+      "date": "2017-10-22"
+    },
+    {
+      "id": 10,
+      "type": "newBaby",
+      "date": "2017-11-07"
+    }
+  ],
+  "sent": [
+    {
+      "message": {
+        "gift": {
+          "pid": "s01",
+          "title": "Diamond",
+          "description": "They say diamonds are forever. Your mortgage will be, too, when you buy this.",
+          "image": "/assets/images/specials/diamond.png"
+        }
+      },
+      "messageData": {
+        "id": 1,
+        "type": "birthday",
+        "date": "2017-01-01"
+      },
+      "id": 1
+    },
+    {
+      "message": {
+        "birthday": "2017-02-06T00:00:00.000Z",
+        "name": {
+          "value": "justin",
+          "display": "Justin"
+        }
+      },
+      "messageData": {
+        "id": 5,
+        "type": "newBaby",
+        "date": "2017-04-07"
+      },
+      "id": 2
+    }
+  ],
+  "names": [
+    {
+      "name": "Chor Sze"
+    },
+    {
+      "name": "Hau Yi"
+    },
+    {
+      "name": "Victoria"
+    },
+    {
+      "name": "John"
+    },
+    {
+      "name": "Valerie"
+    },
+    {
+      "name": "Jerry"
+    },
+    {
+      "name": "Vivian"
+    },
+    {
+      "name": "Justin"
+    },
+    {
+      "name": "James"
+    },
+    {
+      "name": "Thomas"
+    },
+    {
+      "name": "Mark"
+    },
+    {
+      "name": "Siu Sin"
+    },
+    {
+      "name": "Ryan"
+    },
+    {
+      "name": "Emma"
+    },
+    {
+      "name": "Pradip"
+    },
+    {
+      "name": "Abdu"
+    },
+    {
+      "name": "Jonathan"
+    },
+    {
+      "name": "Ying Ting"
+    },
+    {
+      "name": "Kathryn"
+    },
+    {
+      "name": "Edward"
+    },
+    {
+      "name": "Dilbert"
+    },
+    {
+      "name": "Billy"
+    }
+  ],
+  "gifts": [
+    {
+      "pid": "g01",
+      "title": "Coffee Mug",
+      "description": "A brilliantly presented mug with the words 'I own you' printed on the front. Ideal for the coffee addict in your life.",
+      "image": "/assets/images/gifts/i-own-coffee.jpg"
+    },
+    {
+      "pid": "g02",
+      "title": "Exotic tea",
+      "description": "Tea from the other side of the world, presented in a giftbox.",
+      "image": "/assets/images/gifts/exotic-tea.jpg"
+    },
+    {
+      "pid": "g03",
+      "title": "Perfume",
+      "description": "The hottest new fragrance for women. The packaging is as unique as the wearer.",
+      "image": "/assets/images/gifts/perfume.jpg"
+    },
+    {
+      "pid": "g04",
+      "title": "Aftershave",
+      "description": "Mens fragrance in a sleek and functional container.",
+      "image": "/assets/images/gifts/cologne.jpg"
+    },
+    {
+      "pid": "g05",
+      "title": "Kobitos Doll",
+      "description": "As cute as it is ugly. I'm talking about the doll.",
+      "image": "/assets/images/gifts/kobitos.jpg"
+    }
+  ],
+  "specials": [
+    {
+      "pid": "s01",
+      "title": "Diamond",
+      "description": "They say diamonds are forever. Your mortgage will be, too, when you buy this.",
+      "image": "/assets/images/specials/diamond.png"
+    },
+    {
+      "pid": "s02",
+      "title": "Gold bar",
+      "description": "The perfect gift for that person who has everything. Heavier and more impressive than a giftcard and it doesn't expire after one year.",
+      "image": "/assets/images/specials/gold.png"
+    }
+  ]
+}

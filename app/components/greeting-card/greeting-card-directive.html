@@ -1,0 +1,19 @@
+<h2>Your message:</h2>
+
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">Message</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+        <p ng-show="type==='birthday'">
+            Mate, Happy Birthday. To celebrate this once a year occasion we have picked the following gift: {{parameters.gift.title}}.
+            Enjoy.
+        </p>
+
+        <p ng-show="type==='newBaby'">
+            Whooa well done and congratulations on the birth of {{parameters.name.display}} on {{parameters.birthday | date : ddmmyy}}.
+        </p>
+    </md-card-content>
+</md-card>

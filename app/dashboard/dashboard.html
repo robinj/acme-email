@@ -1,0 +1,15 @@
+<h1 class="md-display-2">Welcome to your dashboard</h1>
+
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <number-caption number={{dc.vm.inboxMessages.length}} caption="Upcoming Messages" flex-xs flex-gt-xs="25"></number-caption>
+    <number-caption number={{dc.vm.sentMessages.length}} caption="Sent Messages" flex-xs flex-gt-xs="25"></number-caption>
+</md-content>
+
+<md-list>
+    <md-subheader class="md-no-sticky">Message queue</md-subheader>
+    <md-list-item ng-repeat="message in dc.vm.inboxMessages | limitTo: 5">
+        <p>
+             Event date: <a ng-href="#!/send-message/{{message.id}}">{{message.date}}</a> Type: {{message.type | messageType}}
+        </p>
+    </md-list-item>
+</md-list>

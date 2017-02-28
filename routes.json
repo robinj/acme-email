@@ -1,0 +1,4 @@
+{
+    "/messages/inbox": "/inbox", 
+    "/messages/sent": "/sent"
+}

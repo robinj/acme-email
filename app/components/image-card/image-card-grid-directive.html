@@ -1,0 +1,5 @@
+<md-content class="md-padding" layout-xs="column" layout="row" layout-wrap>
+    <div flex-xs flex-gt-xs="25" ng-repeat="imageCard in imageCards track by $index">
+        <image-card title="{{imageCard.title}}" image="{{imageCard.image}}" description="{{imageCard.description}}" index="{{$index}}" on-select="onSelect({id: id})"></image-card>
+    </div>
+</md-content>

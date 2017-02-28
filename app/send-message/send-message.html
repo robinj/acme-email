@@ -1,0 +1,38 @@
+<h1 class="md-display-2">Sending {{smc.vm.message.type | messageType}} message</h1>
+
+<div ng-show="smc.vm.message.type === 'birthday' && !smc.isMessageReady()">
+    <h2>Select a perfect gift</h2>
+    <image-card-grid image-cards="smc.vm.gifts" on-select="smc.onGiftSelection(id)"></image-card-grid>
+</div>
+
+<div ng-show="smc.vm.message.type === 'newBaby' && !smc.isMessageReady()">
+    <h2>Tell us more about the new baby</h2>
+    <md-content class="md-padding" layout-xs="column" layout="row" layout-wrap>
+        <div flex-xs flex-gt-xs="25">
+            <md-input-container>
+                <label>Enter DoB</label>
+                <md-datepicker ng-model="smc.vm.messageParams.birthday"></md-datepicker>
+            </md-input-container>
+            <md-input-container>
+                <label>Name</label>
+                <md-autocomplete md-selected-item="smv.vm.messageParams.name" md-search-text="smc.searchText" md-items="item in smc.queryName(smc.searchText)"
+                    md-item-text="item.display" md-selected-item-change="smc.onSelectedNameChange(item)">
+                    <md-item-template>
+                        <span md-highlight-text="searchText">{{item.display}}</span>
+                    </md-item-template>
+                    <md-not-found>
+                        No matches found.
+                    </md-not-found>
+
+                    <span>{{item.display}}</span>
+                    </md-autocomplete>
+            </md-input-container>
+        </div>
+    </md-content>
+</div>
+
+
+<div ng-show="smc.isMessageReady()">
+    <greeting-card type="{{smc.vm.message.type}}" parameters="smc.vm.messageParams"></greeting-card>
+    <md-button class="md-raised md-primary" ng-click="smc.sendMessage()">Send</md-button>
+</div>
